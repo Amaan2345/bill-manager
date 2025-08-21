@@ -496,7 +496,7 @@ import axios from 'axios';
 import * as pdfjs from 'pdfjs-dist';
 
 // Define the backend API URL. This is a placeholder and should point to your live server.
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://bill-manager-api.onrender.com';
 
 // Configure PDF.js worker with a known stable version
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js`;
