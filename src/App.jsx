@@ -499,7 +499,7 @@ import * as pdfjs from 'pdfjs-dist';
 const API_URL = 'https://bill-manager-api.onrender.com';
 
 // Configure PDF.js worker with a known stable version
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
 // === Utilities ===
 
