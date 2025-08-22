@@ -975,7 +975,7 @@ const BillScannerApp = ({ user, onLogout }) => {
               />
             </div>
             <div className="text-xs text-gray-600">or drag & drop here</div>
-            {status && <div className="mt-2 text-sm font-medium">{status}</div>}
+            {status && <div className="mt-2 text-sm font-medium insert-docs">{status}</div>}
           </div>
         </section>
 

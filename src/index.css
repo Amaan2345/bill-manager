@@ -265,6 +265,10 @@ input{
   margin-bottom: 15px;
 }
 
+.insert-docs{
+  max-width: 240px !important;
+}
+
 .bg-white{
   max-width: 320px;
 }
