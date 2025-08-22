@@ -801,7 +801,7 @@ const BillScannerApp = ({ user, onLogout }) => {
         continue;
       }
       setBusy(true);
-      setStatus(`Scanning: ${file.name}`);
+      // setStatus(`Scanning: ${file.name}`);
 
       try {
         let fileToProcess = file;
@@ -813,7 +813,7 @@ const BillScannerApp = ({ user, onLogout }) => {
 
         const { data } = await Tesseract.recognize(fileToProcess, "eng", {
           logger: (m) => {
-            if (m.status === "recognizing text") setStatus(`OCR ${(m.progress * 100).toFixed(0)}% - ${file.name}`);
+            if (m.status === "recognizing text") setStatus(`OCR ${(m.progress * 100).toFixed(0)}%`);
           },
         });
 
@@ -836,7 +836,7 @@ const BillScannerApp = ({ user, onLogout }) => {
           headers: { Authorization: `Bearer ${token}` }
         });
         setBills((prev) => [response.data, ...prev]);
-        setStatus(`Saved: ${file.name}`);
+        setStatus(`File Saved successfully`);
 
       } catch (e) {
         console.error(e);
