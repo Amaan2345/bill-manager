@@ -265,6 +265,10 @@ input{
   margin-bottom: 15px;
 }
 
+.bg-white{
+  max-width: 320px;
+}
+
 }
 
 form{
